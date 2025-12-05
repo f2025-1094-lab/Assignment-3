@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int marks, attendance;
+
+    cout<<"Enter your Marks:";
+    cin>>marks;
+    cout<<"Enter your attendance:";
+    cin>>attendance;
+    if (marks >= 85) {
+        if (attendance >= 80) {
+            cout<<"Fully Funded Scholarship for Eligible:";
+        } else {
+            cout<<"Not for Eligible for scholarship:"; 
+        }
+    } else{
+    if (marks >= 70) {
+        cout<<"Partial Scholarship:";
+    } else {
+        cout<<"Not for Eligible for scholarship:";
+    }
+    }
+    return 0;
+}
