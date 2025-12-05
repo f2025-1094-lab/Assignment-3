@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    char alph;
+
+    cout << "Enter a single character: ";
+    cin >> alph;
+
+    if(alph>='A' && alph<='Z'){
+        if(alph=='A' || alph=='E' || alph=='I' || alph=='O' || alph=='U' ){
+            cout<<"It is upercase Vowel :";
+        }else{
+            cout<<"It is Also consonent:";
+        }
+    }
+    else if(alph>='a'  &&  alph<='z'){
+        if (alph=='a' || alph=='e' || alph=='i' || alph=='o' || alph=='u'){
+            cout<<"it is lowercase vowel";
+        }else {
+               cout<<"it is lowercase consonent:";
+            }
+           cout<<endl; 
+    }
+            else{
+            cout<<"it is not Alphabet";
+    }
+    
+    return 0;
+    }
+    
