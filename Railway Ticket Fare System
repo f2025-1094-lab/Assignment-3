@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+int main()
+{ 
+    int total_fare=0;
+     int Economy= 5;
+     int business=8;
+     int firstclass=12;
+    int choice;
+    int distance;
+    cout<<"1.Economny"<<endl;
+    cout<<"2.Business"<<endl;
+    cout<<"3.First class"<<endl;
+    cout<<"4.Close the program"<<endl;
+    cout<<"choice one of them" <<endl;
+    cin>>choice;
+    switch(choice){
+        case 1:
+        cout<<"Enter your Distance :"<<endl;
+        cin>>distance;
+        total_fare=distance*Economy;
+        cout<<"Your Answer is "<<total_fare;
+        break;
+        case 2:
+        cout<<"Enter your Distance :"<<endl;
+        cin>>distance;
+        total_fare=distance*business;
+        cout<<"Your Answer is "<<total_fare;
+        break;
+        case 3:
+        cout<<"Enter your First Class :"<<endl;
+        cin>>distance;
+        total_fare=distance*firstclass;
+        cout<<"Your Answer is "<<total_fare;
+        break;
+        case 4:
+        cout<<"close the program ";
+        break;
+        default:
+         cout<<"Your Welcome";
+    }
+    return 0;
+}
+    
