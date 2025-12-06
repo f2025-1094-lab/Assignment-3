@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int income,tax=0;
+    cout<<"Enter your Income :";
+    cin>>income;
+    if(income<=50000){
+        income-=tax;
+        cout<<"Your income is "<<income;
+    }
+          else  if(income>50000 && income<=100000){
+                tax=income*0.10;
+                cout<<"your Tax is"<<tax<<endl;
+                income-=tax;
+                cout<<"your income after tax deduction:"<<income;
+            }
+              else if (income>100000 && income<=200000){
+                tax=income*0.20;
+                cout<<"your Tax is"<<tax<<endl;
+                income-=tax;
+                cout<<"your income after tax deduction:"<<income;
+            }
+            else {
+                tax=income*0.30;
+                cout<<"your Tax is"<<tax<<endl;
+                income-=tax;
+                cout<<"your income after tax deduction:"<<income;
+            }
+            return 0;
+}
