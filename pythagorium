@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int a,b,c;
+    cout<<"Enter yor 1st Number";
+    cin>>a;
+    cout<<"Enter yor 2nd Number";
+    cin>>b;
+    cout<<"Enter yor 3rd Number";
+    cin>>c;
+    if(a*a+b*b==c*c ){
+        
+        cout<<"It is pythagorium Formula";
+    }else{
+        cout<<"it is not pythagorium";
+    }
+    return 0;
+}
