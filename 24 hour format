@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int hour;
+    cout<<"Enter your hour :";
+    cin>>hour;
+    if(hour<0 || hour>23){
+        cout<<"It is invalid Number:";
+    }
+      int converted;
+   string period;
+        if(hour==0){
+            converted=12;
+           period="AM";
+        }else if(hour==12){
+            converted=24;
+            period="PM";
+        }else if(hour>12){
+            converted=hour-12;
+            period="PM";
+        }else{
+            converted=hour;
+            period="AM";
+        }
+        cout<<"24 hour formated   "  <<  converted<<" "<<period;
+          return 0;
+    }
+  
