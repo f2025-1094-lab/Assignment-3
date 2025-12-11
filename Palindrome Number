@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int start;
+    int end;
+    cout<<"Enter your number of Start:";
+    cin>>start;
+     cout<<"Enter your number of end:";
+    cin>>end;
+    for(int num=start; num<=end; num++){
+        int originalNumber=num;
+        int reversedNumber=0;
+        int temp=num;
+        while(temp>0){
+            
+            int digit=temp%10;
+            reversedNumber=reversedNumber*10+digit;
+            temp/=10;
+        }
+    if(originalNumber==reversedNumber){
+        cout<<originalNumber<<" ";
+    }
+      
+    }
+  
+     return 0;
+}
