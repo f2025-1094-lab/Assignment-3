@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int factorial(int a){
+    int fact=1;
+    for(int i=1; i<=a; i++){
+    fact*=1;
+}
+return fact;
+}
+int main (){
+    int x;
+    cout<<"Enter A Number :";
+    cin>>x;
+    int temp=0;
+    int sum=0;
+    temp=x;
+    while(temp>0){
+        int digit=temp%10;
+        sum+=digit;
+        temp/=10;
+    }
+if(sum==x){
+    cout<<"Yes it is Strong Number:";
+}else{
+    cout<<"Sorry it is not Strong Number:";
+}
+cout<<endl;
+return 0;
+}
