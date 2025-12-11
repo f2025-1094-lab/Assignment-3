@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int decimal;
+    cout<<"Enter your 1st decimal number:";
+    cin>>decimal;
+    int number=decimal;
+    int place=1 ;
+    int binary=0;
+    while(number>0){
+        int bit=number%2;
+        binary=binary+bit*place;
+        place=place*10;
+        number/=2;
+    }
+    cout<<"Binary Numbers Are "<<binary;
+    return 0;
+}
