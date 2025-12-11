@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int start;
+    int end;
+    cout<<"Enter your 1st number:";
+    cin>>start;
+    cout<<"Enter your 2nd number :";
+    cin>>end;
+    cout<<"The 1st Number is "<<start<<" The 2nd Numbers"<<end<<endl;
+    for(int i=start; i<=end; i++ ){
+        if(i<=1) continue;
+        bool prime =true;
+    
+    for(int j=2; j<=i/2; j++){
+       if(i%j==0){
+           prime=false;
+           break;
+       }
+    }
+    
+    if(prime){
+        cout<<i<<" ";
+    }
+    }
+    cout<<endl;
+    return 0;
+}
