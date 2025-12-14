@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+    string greet(string name){
+        return "Hello jane man " + name + "!";
+    }
+    int main(){
+        string username;
+        cout<<"enter your name:"<<endl;
+        cin>>username;
+        cout<<greet(username);
+        return 0;
+    }
