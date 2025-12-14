@@ -3,9 +3,9 @@ using namespace std;
 int main() {
     int rows, cols;
     cout << "<======== CINEMA SEATING PLANNING ===========>" << endl;
-    cout << "Enter number of rows: ";
+    cout << "Enter number of rows";
     cin >> rows;
-    cout << "Enter number of columns: ";
+    cout << "Enter number of columns";
     cin >> cols;
     int cinema[rows][cols] = {0};
     char choice;
@@ -15,12 +15,12 @@ int main() {
               if(cinema[i][j] == 0)
 cout << "[F] "; // Free seat
                 else
-                    cout << "[X] "; // Booked seat
+                   cout << "[X] ";
             }
             cout << endl;
         }
         int r, c;
-        cout << "\nEnter seat to reserve (row column): ";
+        cout << Enter seat to reserve (row column): ";
         cin >> r >> c;
         if(r < 1 || r > rows || c < 1 || c > cols) {
             cout << "Invalid seat number! Try again.\n";
