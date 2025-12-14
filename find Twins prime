@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+bool is_prime_number(int number){
+    if(number<2)
+    return false;
+    for(int i=0; i<=number/2; i++){
+        if(number%i==0){
+            return false;
+        }
+    }
+    return true;
+}
+int count_prime_number(int num1, int num2){
+    int count=0;
+    for(int i=num2; i<=num2; i++){
+        if(is_prime_number(i))
+            count ++;
+    }
+    return count;
+}
+int main(){
+    int start, end;
+    cout<<"Enter your Start and End Numbers:"<<endl;
+    cin>>start>>end;
+    int Total_primes_Numbers=count_prime_number(start,end);
+    cout << "Number of primes between " << start << " and " << end << " is: " << Total_primes_Numbers << endl;
+return 0;
+}
