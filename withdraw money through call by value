@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int  withdraw(int balance , int amount){
+        balance-=amount;
+        cout<<"New balance is "<<balance<<endl;
+    return balance;
+}
+int main(){
+    int balance, amount;
+    cout<<"Enter your balance & amount:";
+    cin>>balance>>amount;
+    withdraw(balance,amount);
+    
+    cout<<"Original Balance is"<<balance;
+    return 0;
+}
