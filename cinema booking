@@ -1,51 +1,38 @@
 #include <iostream>
 using namespace std;
-
 int main() {
     int rows, cols;
     cout << "<======== CINEMA SEATING PLANNING ===========>" << endl;
-
-    // Take cinema size from user
     cout << "Enter number of rows: ";
     cin >> rows;
     cout << "Enter number of columns: ";
     cin >> cols;
-
-    int cinema[rows][cols] = {0};  // 0 = Free, 1 = Booked
-
+    int cinema[rows][cols] = {0};
     char choice;
     do {
-        // Display current cinema layout
-        cout << "\nCinema Layout:\n";
         for(int i = 0; i < rows; i++) {
             for(int j = 0; j < cols; j++) {
-                if(cinema[i][j] == 0)
-                    cout << "[F] "; // Free seat
+              if(cinema[i][j] == 0)
+cout << "[F] "; // Free seat
                 else
                     cout << "[X] "; // Booked seat
             }
             cout << endl;
         }
-
-        // Take reservation input
         int r, c;
         cout << "\nEnter seat to reserve (row column): ";
         cin >> r >> c;
-
-        // Check validity
         if(r < 1 || r > rows || c < 1 || c > cols) {
             cout << "Invalid seat number! Try again.\n";
         } else if(cinema[r-1][c-1] == 1) {
             cout << "Seat already booked! Choose another.\n";
         } else {
-            cinema[r-1][c-1] = 1;
-            cout << "Seat [" << r << "][" << c << "] booked successfully.\n";
+            cinema[r-1][c-1] = 1
+cout << "Seat [" << r << "][" << c << "] booked successfully.\n";
         }
         cout << "Do you want to reserve another seat? (y/n): ";
-        cin >> choice;
-
+    cin >> choice;
     } while(choice == 'y' || choice == 'Y');
-
     cout << "\nFinal Cinema Layout:\n";
     for(int i = 0; i < rows; i++) {
         for(int j = 0; j < cols; j++) {
@@ -56,6 +43,5 @@ int main() {
         }
         cout << endl;
     }
-
     return 0;
 }
