@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+   void Even_odd(int number){
+       if(number%2==0){
+           cout<<"Your Number is Even ="<<number<<endl;
+       }else{
+           cout<<"Your Number is Odd ="<<number<<endl;
+       }
+   }
+   int main(){
+       int digits;
+       cout<<"Enter Your Number :";
+       cin>>digits;
+       Even_odd(digits);
+       return 0;
+   }
