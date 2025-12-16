@@ -1,0 +1,31 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+bool Armstrong_Number(int num){
+    int original_number=num;
+    int sum=0;
+    int digit=0;
+    int temp=num;
+    while(temp!=0){
+        digit++;
+        temp/=10;
+    }
+    temp=num;
+    while(temp!=0){
+        int digits=temp%10;
+        sum+= pow (digits,digit);
+        temp/=10;
+    }
+    return (sum==original_number);
+}
+int main(){
+    int x;
+    cout<<"Enter your Number:";
+    cin>>x;
+    if(Armstrong_Number(x)){
+        cout<<"Its is Armstrong_Number:";
+    }else{
+        cout<<"Its not is Armstrong_Number:";
+    }
+    return 0;
+}
